@@ -14,13 +14,13 @@
     </header>
 
     <ul>
-<li>
+        @for (task of selectdUserTasks; track task.id){
+            <li>
 
-    <app-task></app-task>
-</li>
-<li>
+                <app-task [task]="task" ></app-task>
+            </li>
+            
+        }
 
-    <app-task></app-task>
-</li>
     </ul>
 </section>
